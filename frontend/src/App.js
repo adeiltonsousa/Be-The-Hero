@@ -1,19 +1,12 @@
-import React, { useState, setState } from 'react';
+import React from 'react';
 
-import Header from './Header';
+import Logon from './pages/Logon';
+import './global.css';
 
 function App() {
-
-  const [counter, setCounter] = useState(0);
-
-  function handleAdd() {
-    setCounter(counter + 1);
-  }
-
   return (
     <div>
-      <span>Contador: {counter}</span>
-      <button onClick={handleAdd}>Incrementar</button>
+      <Logon />
     </div>
   );
 }
